@@ -1,8 +1,7 @@
 # Security Policy
 
-Please report vulnerabilities privately through GitHub's security advisory
-flow. Do not open a public issue containing credentials, private evidence,
-personal data, or an unpatched exploit.
+Use GitHub's private security advisory flow for vulnerability reports.
+Public issues are not an appropriate channel for sensitive report details.
 
 The reference runtime assumes:
 
@@ -14,4 +13,3 @@ The reference runtime assumes:
 - signed receipts and a durable ledger are supplied by the deployment.
 
 The included digests provide integrity identifiers, not signer identity.
-
