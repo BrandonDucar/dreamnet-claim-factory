@@ -54,6 +54,7 @@ claim envelopes; each destination domain applies its own policy.
 - PII-free outside verification profile for lead intelligence
 - Claim City validation and verifier routing
 - zero runtime dependencies
+- optional HTTP verification boundary for production-shaped lead pipelines
 
 This repository deliberately does not contain an LLM extractor. Model-assisted
 claim drafting belongs behind these contracts and may never assign final status
@@ -65,6 +66,18 @@ to its own output.
 npm ci
 npm test
 ```
+
+Run the outside lead verifier after configuring its operator token:
+
+```bash
+OUTSIDE_CLAIM_FACTORY_TOKEN=replace-me npm start
+```
+
+Runtime routes:
+
+- `GET /live`
+- `GET /ready`
+- `POST /v1/lead-verifications`
 
 The tests demonstrate successful independent promotion, challenged claims,
 human-gated high-risk claims, rejected credentials, worker overlap, and

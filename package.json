@@ -21,7 +21,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test \"dist/test/*.test.js\"",
-    "verify": "npm test"
+    "verify": "npm test",
+    "start": "node dist/src/server.js"
   },
   "engines": {
     "node": ">=22"

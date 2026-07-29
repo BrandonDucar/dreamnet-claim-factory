@@ -1,0 +1,19 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+watchPatterns = [
+  "src/**",
+  "test/**",
+  "package.json",
+  "package-lock.json",
+  "tsconfig.json",
+  "Dockerfile",
+  "railway.toml"
+]
+
+[deploy]
+startCommand = "node dist/src/server.js"
+healthcheckPath = "/ready"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
