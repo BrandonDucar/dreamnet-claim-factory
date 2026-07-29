@@ -68,7 +68,7 @@ test('independently clears evidence-complete lead for human review', () => {
   );
   assert.equal(decision.disposition, 'eligible_for_human_review');
   assert.equal(decision.eligibleForHumanReview, true);
-  assert.match(decision.decisionDigest, /^[a-f0-9]{64}$/);
+  assert.match(decision.decisionDigest, /^sha256:[a-f0-9]{64}$/);
 });
 
 test('keeps observed-only contact evidence inconclusive', () => {
