@@ -51,6 +51,7 @@ claim envelopes; each destination domain applies its own policy.
 - producer/verifier lineage separation
 - explicit rejection of self-verification
 - deterministic promotion, dispute, and human-approval decisions
+- PII-free outside verification profile for lead intelligence
 - Claim City validation and verifier routing
 - zero runtime dependencies
 
@@ -74,6 +75,7 @@ self-certification failure.
 - [Claim Economy Constitution](docs/CLAIM_ECONOMY_CONSTITUTION.md)
 - [University Workforce Protocol](docs/UNIVERSITY_WORKFORCE_PROTOCOL.md)
 - [Independent Factory Protocol](docs/INDEPENDENT_FACTORY_PROTOCOL.md)
+- [Lead Intelligence Verification Profile](docs/LEAD_INTELLIGENCE_PROFILE.md)
 - [Claim City Model](docs/CLAIM_CITY_MODEL.md)
 - [Security](SECURITY.md)
 
@@ -88,4 +90,3 @@ evaluation.
 ## License
 
 Apache-2.0
-
